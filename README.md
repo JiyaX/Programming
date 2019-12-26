@@ -15,3 +15,7 @@ Print the desired output in single line separated by spaces.
 Constraints
 
 1<=N<=1000
+
+QUESTION 2
+Seating Arrangement
+
