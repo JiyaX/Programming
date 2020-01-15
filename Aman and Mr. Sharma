@@ -1,0 +1,11 @@
+days=int(input())
+SUM=0
+for i in range (0,days):
+    radius,amount=map(int,input().split())
+    MD=float(100*amount)
+    distance= (22.0/7)*radius*2
+    if(MD>=distance):
+        SUM=SUM+1
+    else:
+        d=1
+print(SUM)
