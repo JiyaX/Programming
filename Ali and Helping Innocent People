@@ -1,0 +1,42 @@
+s=input()
+a=1
+
+s1=int(s[0])
+s2=int(s[1])
+s3=int(s[3])
+s4=int(s[4])
+s5=int(s[5])
+s6=int(s[7])
+s7=int(s[8])
+ss=s[2]
+
+z1=s1+s2
+z2=s3+s4
+z3=s4+s5
+z4=s6+s7
+
+if z1%2==1:
+    a=0
+
+if z2%2==1:
+    a=0
+
+if z3%2==1:
+    a=0
+
+if z4%2==1:
+    a=0
+
+m=ss.islower()
+
+if m==True:
+    a=0
+
+
+if ss=="A" or ss=="E" or ss=="I" or ss=="O" or ss=="U" or ss=="Y":
+    a=0
+
+if a==0:
+    print("invalid")
+else:
+    print("valid")
