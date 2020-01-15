@@ -1,0 +1,27 @@
+zz=0
+n=int(input())
+a=[]
+b=[]
+for k in range(0,n):
+    q=input()
+    p=input()
+    
+    a.append(q)
+    b.append(p)
+
+for k in range(0,n):
+    zz=0
+    yy=0
+    al=list(a[k])
+    bl=list(b[k])
+
+    an=len(al)
+    bn=len(bl)
+
+    for i in al:
+        if i in bl:
+            zz=zz+1
+            bl.remove(i)
+  
+    z=len(al)+len(bl)-zz
+    print(z)
