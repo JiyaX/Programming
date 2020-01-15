@@ -1,0 +1,7 @@
+mylist = input()
+mylist = [int(x) for x in mylist.split(' ')]
+count=0
+for i in range (mylist[0],mylist[1]+1):
+    if(i% mylist[2]==0):
+        count=count+1
+print(count)
