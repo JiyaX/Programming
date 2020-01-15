@@ -1,0 +1,18 @@
+l=int(input())
+
+n=int(input())
+
+for i in range (0,n):
+    a=input()
+    b=a.split(" ")
+    w=int(b[0])
+    h=int(b[1])
+
+    if (w<l) or (h<l):
+        print("UPLOAD ANOTHER")
+
+    elif (w>=l) and (h>=l) and (w==h):
+        print("ACCEPTED")
+        
+    else:
+        print("CROP IT")
