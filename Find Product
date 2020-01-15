@@ -1,0 +1,7 @@
+N = int(input())
+A = input()
+p = 1
+e = 1000000007
+A = A.split(" ")
+for i in A: p = (p * int(i)) % e
+print(p)
