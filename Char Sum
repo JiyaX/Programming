@@ -1,0 +1,7 @@
+s=input()
+sum=0
+for k in s:
+    g=ord(k)
+    h=g-96
+    sum=sum+h
+print(sum)
