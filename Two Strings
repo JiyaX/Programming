@@ -1,0 +1,20 @@
+n=int(input())
+
+for j in range (0,n):
+    a1,a2=input().split()
+    l1=list(a1)
+    l2=list(a2)
+    z=1
+    
+    for i in l1:
+        j=0
+        if i in l2 :
+            j=1
+        if(j==0):
+            print("NO")
+            z=0
+            break
+        else:
+            l2.remove(i)
+    if (z!=0):
+        print("YES")
