@@ -1,0 +1,30 @@
+s=input()
+n=int(input())
+
+for i in s:
+    a=ord(i)
+    if ((a<=122) and (a>=97)) or () :
+        z=n%26
+        a=a+z
+    
+        if (a>122):
+            a=a-26
+        if (a>90) and (a<97):
+            a=a-26
+
+    elif (a>=65)and(a<=90):
+        z=n%26
+        a=a+z
+        
+        if (a>90):
+            a=a-26
+
+    elif (a>=48)and(a<=57):
+        z=n%10
+        a=a+z
+        if (a>57) and (a<65):
+            a=a-10
+
+    
+    b=chr(a)
+    print(b,end="")
